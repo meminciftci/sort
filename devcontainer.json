@@ -1,0 +1,15 @@
+// For format details, see https://aka.ms/devcontainer.json. 
+{
+    "name": "meminciftci",
+    "image": "ghcr.io/meminciftci/sort",
+    "settings": {},
+    "extensions": [],
+    "containerEnv": {
+        "DISPLAY": "unix:0"
+    },
+    "mounts": [
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
+    ],
+    // Uncomment to connect as a non-root user if you've added one.
+    "remoteUser": "meminciftci"
+}
